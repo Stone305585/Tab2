@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="vertical" >  
+        
+        
+  <!-- 每日推荐 -->
+  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="0dp"  
+        android:layout_gravity="center"  
+        android:orientation="vertical"
+        android:layout_weight="0.2"
+        >  
+        <ImageView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_horizontal"  
+            android:src="@drawable/message_selected" />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="center_horizontal"  
+            android:padding="10dp"  
+            android:text="这是待开发界面"  
+            android:textSize="20sp" />  
+    </LinearLayout>
+
+
+<!--     第二部分是购买会员和问卷（再讨论 一下，到底什么）购买跳转到支付宝，问卷提示请登陆 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="这是待开发界面"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!--     第三部分是分类的各种音乐的类型，采用GridView，也可以采用Win8的Metro，
+ Metro效果好一点，也可以采用。 -->
+ 
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffcc"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+    </LinearLayout>
+    
+  
+</LinearLayout>
